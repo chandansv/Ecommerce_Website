@@ -1,0 +1,30 @@
+{
+  "name": "shopfront",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "serve": "npm run build && npm run start",
+    "dev:api": "node server.js",
+    "db:migrate": "node scripts/db-migrate.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "e2e": "node scripts/e2e.mjs",
+    "shots": "node scripts/shots.mjs"
+  },
+  "dependencies": {
+    "better-auth": "^1.7.5",
+    "express": "^5.2.1",
+    "pg": "^8.23.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  }
+}
